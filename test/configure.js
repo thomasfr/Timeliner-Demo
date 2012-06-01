@@ -1,7 +1,6 @@
 var Timeliner = require('Timeliner-Core');
 var redis = require('redis');
 var redisClient = redis.createClient();
-console.dir(redisClient);
 var indexer = Timeliner.createIndexer({
     indexRedisClient: redisClient
 });
